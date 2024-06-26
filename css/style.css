@@ -62,7 +62,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-y: scroll;
+  height: 100%;}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -174,6 +176,7 @@ figure {
   margin: 0 0 1rem; }
 
 img {
+  pointer-events: none;
   vertical-align: middle;
   border-style: none; }
 
@@ -4358,7 +4361,7 @@ button.close {
   outline: 0; }
   .modal-open .modal {
     overflow-x: hidden;
-    overflow-y: auto; }
+    overflow-y: scroll; }
 
 .modal-dialog {
   position: relative;
